@@ -6,6 +6,7 @@ import { CutomerDashboardComponent } from './cutomer-dashboard.component';
 
 @NgModule({
   declarations: [CutomerDashboardComponent],
+  exports: [CutomerDashboardComponent],
   imports: [
     CommonModule
   ]
