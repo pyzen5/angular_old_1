@@ -1,0 +1,23 @@
+<a routerLink="/comp">Home</a> | 
+<a routerLink="displaydata">Display Data</a>
+<br>
+<h3>Displaying Data</h3>
+
+<h4>Usage of Interpolation</h4>
+{{var1}} <br>
+
+<h4>Usage of *ngFor</h4>
+<ul *ngFor="let fruit of var2">
+    <li>{{fruit}}</li>
+</ul>
+
+<h4>Usage of *ngFor with class</h4>
+<ul *ngFor="let person of var4">
+    <li>{{person.name}} from {{person.place}}</li>    
+</ul>
+
+<h4>Usage of *ngIf</h4>
+<span *ngIf="var3">Display Data</span>
+<button (click)="var3=!var3">Toggle</button>
+
+<br>
