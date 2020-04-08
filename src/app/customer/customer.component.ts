@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataAccessService } from '../service/data-access.service';
 
 @Component({
   selector: 'app-customer',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
-
-  constructor() { }
+  customers = [];
+  constructor(private dataAccess: DataAccessService) { }
 
   ngOnInit(): void {
+    this.dataAccess.getCustomers().subscribe((data: any[]) => {
+      this.customers = data;
+    }, (error) => {
+
+    });
   }
 
 }
