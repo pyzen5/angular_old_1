@@ -11,6 +11,6 @@ export class DataAccessService {
 
   getCustomers() {
     console.log(this.apiUrl);
-    return this.http.get(this.apiUrl + '/getCustomers');
+    return this.http.get(this.apiUrl + '/customer/get');
   }
 }
