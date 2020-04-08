@@ -9,6 +9,8 @@ import { WidgetModule } from './widget/widget.module';
 import { HeaderComponent } from './common/header/header.component';
 import { HighlightDirective } from './common/highlight.directive';
 import { HomeComponent } from './common/home/home.component';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeComponent } from './common/home/home.component';
     HttpClientModule,
     AppRoutingModule,
     ServiceModule,
-    WidgetModule
+    WidgetModule,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
