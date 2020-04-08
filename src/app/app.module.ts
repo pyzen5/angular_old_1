@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ServiceModule } from './service/service.module';
 import { WidgetModule } from './widget/widget.module';
 import { HeaderComponent } from './common/header/header.component';
+import { HighlightDirective } from './common/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

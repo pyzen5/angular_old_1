@@ -7,8 +7,8 @@
 {{var1}} <br>
 
 <h4>Usage of *ngFor</h4>
-<ul *ngFor="let fruit of var2">
-    <li>{{fruit}}</li>
+<ul *ngFor="let fruit of var2; let i=index">
+    <li>{{i+1}}. {{fruit}}</li>
 </ul>
 
 <h4>Usage of *ngFor with class</h4>

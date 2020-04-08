@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./templatesyntax.component.css']
 })
 export class TemplatesyntaxComponent implements OnInit {
-
+  name = 'somehing';
+  help = 'Help Text';
+  isSpecial = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getVal() {
+    return 5;
   }
 
 }

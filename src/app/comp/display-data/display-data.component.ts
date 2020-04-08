@@ -21,4 +21,6 @@ export class DisplayDataComponent implements OnInit {
     ];
   }
 
+  // trackByItems(index: number, item: Item): number { return item.id; }
+
 }
