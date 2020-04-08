@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "git push origin --delete gh-pages && ng build --prod --base-href angular && ngh"
+    "deploy": "git push origin --delete gh-pages && ng build --prod --base-href https://pyzen5.github.io/angular/ && ngh"
   },
   "private": true,
   "dependencies": {
