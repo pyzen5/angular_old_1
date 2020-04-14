@@ -1,0 +1,14 @@
+<p>Built in pipe</p>
+{{300 | currency}}
+<p>Default date</p>
+{{curDate}}
+<p>Using built-in date pipe - parameterized</p>
+{{curDate | date: 'MMM-dd-yyyy'}}
+<p>Using built-in date pipe - chaining</p>
+{{curDate | date: 'MMM-dd-yyyy' | uppercase}}
+<p>Object variable</p>
+<input [(ngModel)]="impureObj.name">
+<p>Custom - Pure Pipe</p>
+{{impureObj | pure}}
+<p>Custom - Impure Pipe</p>
+{{impureObj | impure}}

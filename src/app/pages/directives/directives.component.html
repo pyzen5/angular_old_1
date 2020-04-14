@@ -1,0 +1,14 @@
+<div>
+    <h4>Attribute Directive</h4>
+    <p appAttribute>Hello</p>
+</div>
+<div>
+    <h4>Structural Directive</h4>
+    <p *appStructural="stDirCondition" style="display: inline">
+        Structural Directive on condition false
+    </p>
+    <p *appStructural="!stDirCondition" style="display: inline">
+        Structural Directive on condition true
+    </p>
+    <button  style="display: inline" (click)="stDirCondition=!stDirCondition">Toggle Condition</button>
+</div>
