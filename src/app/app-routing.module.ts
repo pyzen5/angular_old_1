@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './common/home/home.component';
 import { DirectivesComponent } from './pages/directives/directives.component';
 import { PipesComponent } from './pages/pipes/pipes.component';
+import { FormsComponent } from './pages/forms/forms.component';
 
 const routes: Routes = [
   { path: 'customer', loadChildren: () => import('./customer/customer.module').then(m => m.CustomerModule) },
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'reusable', loadChildren: () => import('./reusable/reusable.module').then(m => m.ReusableModule) },
   { path: 'directives', component: DirectivesComponent},
   { path: 'pipes', component: PipesComponent},
+  { path: 'forms', component: FormsComponent},
   { path: '', component: HomeComponent }
 ];
 

@@ -1,0 +1,94 @@
+<p>forms works!</p>
+
+<h1>Reactive Forms</h1>
+<h2>Basic Form control</h2>
+<div>
+    <input type="text" [formControl]="name">
+    <button (click)="updateName()">Update</button>
+    <p>Form Value: {{name.value}}</p>
+    <p>Is valid?: {{name.valid}}</p>
+</div>
+<h2>Grouping Form Control</h2>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div>
+        First Name: 
+        <input type="text" formControlName="firstName">
+    </div>
+    <div>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </div>
+    <div formGroupName="address">
+        <h4>Address</h4>
+        <label>
+            Street: 
+            <input type="text" formControlName="street">
+        </label>
+        <div>
+            City: 
+            <input type="text" formControlName="city">
+        </div>
+        <div>
+            State: 
+            <input type="text" formControlName="state">
+        </div>
+    </div>
+    <button (click)="setProfileForm()">Update SetValue</button>
+    <button (click)="patchProfileForm()">Update PatchValue</button>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+<h2>Using Form Builder</h2>
+<form [formGroup]="userForm" (ngSubmit)="onFBSubmit()">
+    <div>
+        First Name: 
+        <input type="text" formControlName="firstName">
+    </div>
+    <div>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </div>
+    <div formGroupName="address">
+        <h4>Address</h4>
+        <label>
+            Street: 
+            <input type="text" formControlName="street">
+        </label>
+        <div>
+            City: 
+            <input type="text" formControlName="city">
+        </div>
+        <div>
+            State: 
+            <input type="text" formControlName="state">
+        </div>
+    </div>
+    <div formArrayName="aliases">
+        <h3>Aliases</h3><button (click)="addAliases()">Add</button>
+        <div *ngFor="let alias of aliases.controls; let i=index">
+            Alias: <input type="text" [formControlName]="i">
+        </div>
+    </div>
+    <p>Current Status: {{userForm.status}}</p>
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
+<h2>Template Driven Form</h2>
+<form #heroForm="ngForm" (ngSubmit)="tdSubmit()">
+    {{heroForm.form.valid}}
+    <div>
+        Name: <input type="text" [(ngModel)]="model.heroName" name="name" #hName="ngModel" required>
+        {{hName.valid}}
+    </div>
+    <div>
+        Alter Ego: <input type="text" [(ngModel)]="model.alterEgo" name="alterEgo">
+    </div>
+    <div>
+        Power: 
+        <select [(ngModel)]="model.power" name="power">
+            <option *ngFor="let power of powers" [value]="power">
+                {{power}}
+            </option>
+        </select>
+    </div>
+    <button (click)="heroForm.reset()">Reset</button>
+    <button type="submit">Submit</button>
+</form>

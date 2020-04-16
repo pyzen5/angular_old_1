@@ -17,7 +17,8 @@ import { DirectivesComponent } from './pages/directives/directives.component';
 import { PurePipe } from './pipe/pure.pipe';
 import { ImpurePipe } from './pipe/impure.pipe';
 import { PipesComponent } from './pages/pipes/pipes.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsComponent } from './pages/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +30,15 @@ import { FormsModule } from '@angular/forms';
     DirectivesComponent,
     PurePipe,
     ImpurePipe,
-    PipesComponent
+    PipesComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     ServiceModule,
     WidgetModule,
     StoreModule.forRoot({}, {}),
