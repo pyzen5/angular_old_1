@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormArray, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Hero } from '../../common/hero';
+import { forbiddenNameValidator } from './customValidator';
 
 @Component({
   selector: 'app-forms',
@@ -13,7 +14,7 @@ export class FormsComponent implements OnInit {
     return this.userForm.get('aliases') as FormArray;
   }
 
-  name = new FormControl('', Validators.required);
+  name = new FormControl('', [Validators.required, forbiddenNameValidator(/bob/i)]);
 
   profileForm = new FormGroup({
     firstName: new FormControl('', Validators.required),

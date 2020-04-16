@@ -19,6 +19,7 @@ import { ImpurePipe } from './pipe/impure.pipe';
 import { PipesComponent } from './pages/pipes/pipes.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './pages/forms/forms.component';
+import { ForbiddenDirective } from './pages/forms/forbidden.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsComponent } from './pages/forms/forms.component';
     PurePipe,
     ImpurePipe,
     PipesComponent,
-    FormsComponent
+    FormsComponent,
+    ForbiddenDirective
   ],
   imports: [
     BrowserModule,
