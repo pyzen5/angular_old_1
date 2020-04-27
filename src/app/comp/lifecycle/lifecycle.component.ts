@@ -14,6 +14,7 @@ export class LifecycleComponent implements OnInit, OnChanges, DoCheck,
   @ContentChild(LifecycleChildComponent) contentChild: LifecycleChildComponent;
 
   var1 = 'Hello';
+  cp_variable = 'some data';
   constructor() {
     console.log('constructor - parent');
   }
@@ -38,19 +39,19 @@ export class LifecycleComponent implements OnInit, OnChanges, DoCheck,
   }
 
   ngAfterContentChecked() {
-    let a = this.contentChild.hero;
+    // let a = this.contentChild.hero;
     console.log('after content checked');
   }
 
   ngAfterViewInit() {
-    if(this.viewChild.hero.length > 10) {
+    if (this.viewChild.hero.length > 10) {
       alert('too long');
     }
     console.log('after view init');
   }
 
   ngAfterViewChecked() {
-    if(this.viewChild.hero.length > 10) {
+    if (this.viewChild.hero.length > 10) {
       alert('too long');
     }
     console.log('after view checked');

@@ -1,19 +1,45 @@
 // tslint:disable-next-line: max-line-length
-import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, Input, Output, SimpleChanges, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnChanges,
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked,
+  OnDestroy,
+  Input,
+  Output,
+  SimpleChanges,
+  EventEmitter,
+} from '@angular/core';
 
 // tslint:disable-next-line: no-conflicting-lifecycle
 @Component({
   selector: 'app-lifecycle-child',
   templateUrl: './lifecycle-child.component.html',
-  styleUrls: ['./lifecycle-child.component.css']
+  styleUrls: ['./lifecycle-child.component.css'],
 })
-export class LifecycleChildComponent implements OnInit, OnChanges, DoCheck,
-AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+export class LifecycleChildComponent
+  implements
+    OnInit,
+    OnChanges,
+    DoCheck,
+    AfterContentInit,
+    AfterContentChecked,
+    AfterViewInit,
+    AfterViewChecked,
+    OnDestroy {
   @Input() info: string;
   @Output() display = new EventEmitter();
+  input1 = 'initialized';
   hero;
+  childInterpolationVariable = 'initial value';
+  childInputVariable = 'initial value';
   constructor() {
     console.log('constructor - child');
+    this.input1 = 'constructor';
   }
 
   displayData() {
@@ -21,12 +47,14 @@ AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestro
   }
 
   ngOnChanges(sc: SimpleChanges) {
-    let a1 = sc.info;
+    const a1 = sc.info;
     console.log('child - on changes');
   }
 
   ngOnInit() {
+    this.input1 = 'init';
     console.log('child - init');
+    this.hero = 'Someone';
   }
 
   ngDoCheck() {
@@ -52,5 +80,4 @@ AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestro
   ngOnDestroy() {
     console.log('child - on destroy');
   }
-
 }

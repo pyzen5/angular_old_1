@@ -1,4 +1,17 @@
-<p>lifecycle-child works!</p>
-Message from Parent {{info}}
-<input type="text" [(ngModel)]="hero">
-<button (click)="displayData()">Click</button>
+<div class="comp-border">
+    <p>Static HTML content - lifecycle-child works!</p>
+    <div style="border: 2px dotted brown;">
+        <p>View Init section</p>
+        <p>Data bound input property: {{info}}</p>
+        <p>Input Property {{input1}}</p>
+    </div>
+    <div style="border: 2px dotted yellow;">
+        Label: <p>{{childInterpolationVariable}}</p>
+        Input: <input type="text" [(ngModel)]="childInputVariable" />
+    </div>
+  
+    <input type="text" [(ngModel)]="hero"> <br/>
+    <button (click)="displayData()">Click</button>
+    <p><ng-content></ng-content></p>
+</div>
+

@@ -1,3 +1,9 @@
 <p>lifecycle works!</p>
 Change the data-bound input property <button (click)="changeVar1()">Change</button>
-<app-lifecycle-child [info]="var1" (display)="dispData($event)"></app-lifecycle-child>
+<app-lifecycle-child [info]="var1" (display)="dispData($event)">
+    <span>Content Projection - Static Data</span>
+    <div style="border: 1px dotted green;">
+        Content projection {{cp_variable}}
+    </div>
+    
+</app-lifecycle-child>
