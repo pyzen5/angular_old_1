@@ -7,10 +7,14 @@ import { TemplatesyntaxComponent } from './templatesyntax/templatesyntax.compone
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 const routes: Routes = [
-  { path: 'templatesyntax', component: TemplatesyntaxComponent},
-  { path: 'displaydata', component: DisplayDataComponent},
-  { path: 'lifecycle', component: LifecycleComponent},
-  { path: '', component: CompComponent }
+  { path: 'templatesyntax', component: TemplatesyntaxComponent },
+  { path: 'displaydata', component: DisplayDataComponent },
+  { path: 'lifecycle', component: LifecycleComponent },
+  {
+    path: '', component: CompComponent, children: [
+      {}
+    ]
+  }
 ];
 
 @NgModule({

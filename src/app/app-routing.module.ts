@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'directives', component: DirectivesComponent},
   { path: 'pipes', component: PipesComponent},
   { path: 'forms', component: FormsComponent},
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  { path: 'components', loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule) },
+  { path: 'observables', loadChildren: () => import('./observables/observables.module').then(m => m.ObservablesModule) }
 ];
 
 @NgModule({
