@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="parenthookvar"/>
+
+<hr>   
+<button (click)="toggleChild()">Toggle Child</button>
+
+<hr>
+<app-lifecyclechild *ngIf="showChild" [hookvar]="parenthookvar"></app-lifecyclechild>
