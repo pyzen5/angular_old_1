@@ -1,0 +1,110 @@
+{
+  "configVersion": 1,
+  "timestamp": 1595856822147,
+  "index": "https://pyzen5.github.io/angular/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://pyzen5.github.io/angular/10-es2015.e92275580532cf346a75.js",
+        "https://pyzen5.github.io/angular/10-es5.e92275580532cf346a75.js",
+        "https://pyzen5.github.io/angular/5-es2015.bb6fab147f0bd9f6c6d5.js",
+        "https://pyzen5.github.io/angular/5-es5.bb6fab147f0bd9f6c6d5.js",
+        "https://pyzen5.github.io/angular/6-es2015.b7ad40e20ce31398004c.js",
+        "https://pyzen5.github.io/angular/6-es5.b7ad40e20ce31398004c.js",
+        "https://pyzen5.github.io/angular/7-es2015.acdd561357b66a68033e.js",
+        "https://pyzen5.github.io/angular/7-es5.acdd561357b66a68033e.js",
+        "https://pyzen5.github.io/angular/8-es2015.4953b56ea4288fee944a.js",
+        "https://pyzen5.github.io/angular/8-es5.4953b56ea4288fee944a.js",
+        "https://pyzen5.github.io/angular/9-es2015.2ef367eacda8f4c67598.js",
+        "https://pyzen5.github.io/angular/9-es5.2ef367eacda8f4c67598.js",
+        "https://pyzen5.github.io/angular/favicon.ico",
+        "https://pyzen5.github.io/angular/index.html",
+        "https://pyzen5.github.io/angular/main-es2015.871f0c79842b38c594a8.js",
+        "https://pyzen5.github.io/angular/main-es5.871f0c79842b38c594a8.js",
+        "https://pyzen5.github.io/angular/manifest.webmanifest",
+        "https://pyzen5.github.io/angular/polyfills-es2015.95bb65e853d2781ac3bd.js",
+        "https://pyzen5.github.io/angular/polyfills-es5.341d48ffc88eaeae911d.js",
+        "https://pyzen5.github.io/angular/runtime-es2015.d0d9587f2788916d99f0.js",
+        "https://pyzen5.github.io/angular/runtime-es5.d0d9587f2788916d99f0.js",
+        "https://pyzen5.github.io/angular/styles.14783a8d2c2763e8485d.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://pyzen5.github.io/angular/assets/icons/icon-128x128.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-144x144.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-152x152.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-192x192.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-384x384.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-512x512.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-72x72.png",
+        "https://pyzen5.github.io/angular/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://pyzen5.github.io/angular/10-es2015.e92275580532cf346a75.js": "f010fc2b9ea54c71c0c3f60c9db77830bea8342b",
+    "https://pyzen5.github.io/angular/10-es5.e92275580532cf346a75.js": "83f49da635de4eff88300f4a7b359c50b2c45533",
+    "https://pyzen5.github.io/angular/5-es2015.bb6fab147f0bd9f6c6d5.js": "2a5f1b8b1458a0ba4b619e53a6c9b282e63befb0",
+    "https://pyzen5.github.io/angular/5-es5.bb6fab147f0bd9f6c6d5.js": "f71480823287b56810a9d47c5b0f967e27bca156",
+    "https://pyzen5.github.io/angular/6-es2015.b7ad40e20ce31398004c.js": "524ffbc312547efb4ab2e48931a22b25fd3a6137",
+    "https://pyzen5.github.io/angular/6-es5.b7ad40e20ce31398004c.js": "f08a771d78572f2fd737c4ede18af0d9f1855662",
+    "https://pyzen5.github.io/angular/7-es2015.acdd561357b66a68033e.js": "786cf890f82b0f629ce7dbd08967cb9b67345282",
+    "https://pyzen5.github.io/angular/7-es5.acdd561357b66a68033e.js": "a95d4b1893379cca98fde8fcac8ab997301aadf1",
+    "https://pyzen5.github.io/angular/8-es2015.4953b56ea4288fee944a.js": "c1674473aff33c577340c4d5abe456e6603499ce",
+    "https://pyzen5.github.io/angular/8-es5.4953b56ea4288fee944a.js": "5a22dbdafef16dfc85d29a149e287c586f7c9fb3",
+    "https://pyzen5.github.io/angular/9-es2015.2ef367eacda8f4c67598.js": "e37a917975a92388004a4f8fefdc117aea7b3417",
+    "https://pyzen5.github.io/angular/9-es5.2ef367eacda8f4c67598.js": "7fb6f8a3a27f523e03d1edba2c15b6706cb25503",
+    "https://pyzen5.github.io/angular/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://pyzen5.github.io/angular/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://pyzen5.github.io/angular/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://pyzen5.github.io/angular/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://pyzen5.github.io/angular/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://pyzen5.github.io/angular/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://pyzen5.github.io/angular/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://pyzen5.github.io/angular/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://pyzen5.github.io/angular/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://pyzen5.github.io/angular/index.html": "3a702b1498117eb4af375cbbe172493c62fc90fa",
+    "https://pyzen5.github.io/angular/main-es2015.871f0c79842b38c594a8.js": "24969e532832dae2213c28cf079deefe2d8ecee4",
+    "https://pyzen5.github.io/angular/main-es5.871f0c79842b38c594a8.js": "e4f24c41d382a01c2feae2ed044089ffaa6ee3a8",
+    "https://pyzen5.github.io/angular/manifest.webmanifest": "0583af17e4d6f36216ce2d5be82e61ae0d711a43",
+    "https://pyzen5.github.io/angular/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "https://pyzen5.github.io/angular/polyfills-es5.341d48ffc88eaeae911d.js": "ff14d90e08622190714660721edab5f43578829a",
+    "https://pyzen5.github.io/angular/runtime-es2015.d0d9587f2788916d99f0.js": "50dec08d76925010aa8033c48d1bbb5a16d500bf",
+    "https://pyzen5.github.io/angular/runtime-es5.d0d9587f2788916d99f0.js": "80cdbbc00d986eed992014bc16f1d670d626995e",
+    "https://pyzen5.github.io/angular/styles.14783a8d2c2763e8485d.css": "d10d29882626d08be69116d3914b88de3f16ee4f"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
