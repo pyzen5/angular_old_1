@@ -20,6 +20,8 @@ import { PipesComponent } from './pages/pipes/pipes.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './pages/forms/forms.component';
 import { ForbiddenDirective } from './pages/forms/forbidden.directive';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { ForbiddenDirective } from './pages/forms/forbidden.directive';
     WidgetModule,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
